@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        // 민수의 키, 몸무게 입력
+        int mHeight = sc.nextInt();
+        int mWeight = sc.nextInt();
+        
+        // 기영이의 키, 몸무게 입력
+        int gHeight = sc.nextInt();
+        int gWeight = sc.nextInt();
+        
+        // 민수가 키도 크고 몸무게도 큰지 확인
+        boolean result = (mHeight > gHeight) && (mWeight > gWeight);
+        
+        System.out.println(result);
+        sc.close();
+    }
+}
+
